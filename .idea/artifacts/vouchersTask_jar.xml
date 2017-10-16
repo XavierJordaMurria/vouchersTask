@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="vouchersTask:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/vouchersTask_jar</output-path>
+    <root id="root">
+      <element id="archive" name="vouchersTask.jar">
+        <element id="module-output" name="vouchersTask" />
+      </element>
+    </root>
+  </artifact>
+</component>

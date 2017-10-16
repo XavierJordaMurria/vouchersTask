@@ -1,0 +1,6 @@
+voucher_type_1 5 sequentialNumbers 0 1000
+voucher_type_2 2 sequentialNumbers 500 1000
+voucher_type_3 3 sequentialNumbers 1000 2000
+voucher_type_1 5 randomNumbers 0 1000
+voucher_type_2 2 randomNumbers 500 1000
+voucher_type_3 3 randomNumbers 1000 2000
