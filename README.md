@@ -7,16 +7,17 @@ Any generator implementations are valid, but you have to use at least two differ
 
 The application will take a file path from a command line argument, read in the contents of the file and output the result to stdout.
 
+* I've used IntelliJ IDEA for the creation of the project.
 * I've decided to pass a file into the command line for scalability purposes, so if we want to generate hundreds of different vouchers types it is easier to handle it, and
-and also for reusability so we can use the same data input more than once. 
+also for reusability so we can use the same data input more than once. 
 * I've also made the assumption that it would be useful to know the voucher type from the generated number, so I add the voucher_Type ID as a prefix of the final voucher code.
 
-* I've added 2 more parameters into the input instruction so now it looks like: [voucher_type, amount_of_vouchers, algorithm_type, lower_range, upper_range]
-I've thought that, having the possibility to pass into the application the lower and upper range gives much more flexibility at the moment of generating the sequences of numbers.
-* I've also made the vouchers and the algorithms type to be strongly typed, so it is easy to spot a error in the input instruction.
+* I've added 2 more parameters into the input instruction so now it looks like: [voucher_type, amount_of_vouchers, algorithm_type, lower_range, upper_range].
+I've thought that, having the possibility to pass into the application, the lower and upper ranges gives much more flexibility at the moment of generating the sequences of numbers.
+* I've also made the vouchers and the algorithms type to be strongly typed, so it is easy to spot an error in the input instruction.
 
-* Into the bin directory you will find an executable that is nothing else than a wrapping script calling the vouchersTask.jar artifact.
-* In order to guaranty to that the functionality, I've introduced a set of tests where I check the core functionalities of the application.
+* Into the bin directory you will find an executable(./vouchersTask) that is nothing else than a wrapping script calling the vouchersTask.jar artifact.
+* In order to guaranty the functionality, I've introduced a set of tests where I check the core functionalities of the application.
 Examples:
 
  Invocation:
